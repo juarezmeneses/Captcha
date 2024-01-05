@@ -9,8 +9,8 @@ methods = [
     cv2.THRESH_TOZERO_INV,
 ]
 
-#imagem = cv2.imread("bdcaptcha/telanova0.png")
-imagem = cv2.imread("bdcaptchafgts/telanova0.png")
+#imagem = cv2.imread("bdcaptcha/imagem_captcha_300.png")
+imagem = cv2.imread("bd_fgts/imagem_captcha_300.png")
 
 # transformar a imagem em escala de cinza
 
