@@ -18,8 +18,10 @@ images = paths.list_images(folder_base_images)
 print(list(images))
 
 for file in images:
+    # ['bd_letters_and_numbers_labeled', 'A_upper', "image.png"]
     label = file.split(os.path.sep)[-2]
     image = cv2.imread(file)
     image = cv2.cvtColor(image, cv2.COLOR_RGR2GRAY)
 
-# ['bd_letters_and_numbers_labeled', 'A_upper', "image.png"]
+    image = resize_to_fit(image, 20, 20)
+
