@@ -10,3 +10,16 @@ from keras.layers.convolutional import Conv2D, MaxPooling2D
 from keras.layers.core import Flatten, Dense
 from helpers import resize_to_fit
 
+data  = []
+labels = []
+folder_base_images = "bd_letters_and_numbers_labeled"
+
+images = paths.list_images(folder_base_images)
+print(list(images))
+
+for file in images:
+    label = file.split(os.path.sep)[-2]
+    image = cv2.imread(file)
+    image = cv2.cvtColor(image, cv2.COLOR_RGR2GRAY)
+
+# ['bd_letters_and_numbers_labeled', 'A_upper', "image.png"]
