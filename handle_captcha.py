@@ -25,7 +25,7 @@ def handle_images(folder_origin, folder_destiny='bd_fgts_clean'):
             for x in range(image.size[1]):
                 for y in range(image.size[0]):
                     color_pixel = image.getpixel((y, x))
-                    print(f"Pixel na posição ({y}, {x}): {color_pixel}")
+                    #print(f"Pixel na posição ({y}, {x}): {color_pixel}")
                     if color_pixel > 215:
                         image2.putpixel((y, x), (0, 0, 0))
             file_name = os.path.basename(file)
