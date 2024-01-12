@@ -64,6 +64,7 @@ def solve_captcha():
 
             #matrix decode
             preview_letter = lb.inverse_transform(preview_letter)[0]
+            preview_letter = preview_letter.replace("_upper", "").replace("_lower", "")
             preview.append(preview_letter)
 
             #cv2.rectangle(image_end, (x - 2, y - 2), (x + w + 2, y + h + 2), (0, 255, 0), 1)
