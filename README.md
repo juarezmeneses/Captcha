@@ -17,3 +17,7 @@
 #### 3.4 pip install tensorflow
 #### 3.5 pip install keras
 
+### Results
+
+#### Traning the model
+![epoch](https://github.com/juarezmeneses/Captcha/assets/3067971/8684fad8-de77-4932-9c10-68df7c02711e)
